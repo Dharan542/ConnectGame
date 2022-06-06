@@ -1,0 +1,261 @@
+body{
+    background-color: rgb(233, 232, 232);
+    transition: .7s;
+}
+#totalDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.col{
+    background-color: rgba(239, 239, 239, 0.8);
+    border: 1px solid black;
+    border-style:dotted;
+    width: 70px;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.innerBox{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+#wrapper{
+    width: 50%;
+    height: 95vh;
+    text-align: center;
+}
+.btn{
+    margin: 40px 0px 0px 0px ;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    box-sizing: border-box;
+    padding: 3px;
+    box-shadow: 2px 3px 3px gray;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn:hover{
+    background-color: rgb(214, 212, 212);
+    transition: 0.5s;
+}
+#buttonDiv{
+    width: 90%;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.tableDiv{
+    text-align: center;
+    margin: 10px 5% 0px 5%;
+}
+#tableDiv{
+    width: 100%;
+}
+
+#tableWrapper{
+    box-shadow: 2px 2px 5px rgb(182, 180, 180);
+    margin: 50px 10%;
+    width: 90%;
+    height: 75%;
+    background-color: white;
+    border-radius: 15px;
+    transition: 1s;
+    border: 1px solid #ccc;
+}
+#startBtn{
+    position: absolute;
+    top:50%;
+    left: 45%;
+    padding: 25px 90px;
+    background-color: teal;
+    color: white;
+    border: 0ch;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: .2s;
+}
+#startBtn:hover{
+    background-color: rgb(1, 104, 104);
+    box-shadow: 2px 2px 3px gray;
+    transition: .2s;
+}
+#stopBtn{
+    padding: 15px 40px;
+    margin: 10px 0px 0px 60px;
+    background-color: rgb(207, 7, 7);
+    color: white;
+    border: 0ch;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: .2s;
+}
+#stopBtn:hover{
+    background-color: rgb(176, 6, 6);
+    box-shadow: 2px 2px 3px gray;
+    transition: .2s;
+}
+#resetBtn{
+    padding: 15px 40px;
+    margin: 30px 60px 0px 100px;
+    background-color: rgb(110, 155, 47);
+    color: white;
+    border: 0ch;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: .2s;
+}
+#resetBtn:hover{
+    background-color: rgb(97, 139, 38);
+    box-shadow: 2px 2px 3px gray;
+    transition: .2s;
+}
+
+#counterBox{
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: white;
+    width: 30%;
+    height: 300px;
+    box-shadow: 2px 2px 5px rgb(182, 180, 180);
+    border-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#redCounterBox{
+    border-radius: 20px;
+    display: inline-block;
+    border:4px solid rgb(30, 255, 30);
+    margin-right: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+#blueCounterBox{
+    display: inline-block;
+    border-radius: 20px;
+    border: 4px solid #ccc;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 135,.5);
+}
+#secondsCounterDiv{
+    margin-top: 20px;
+}
+#replayBtn{
+    padding: 15px 30px;
+    background-color: teal;
+    color: white;
+    border: 0ch;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: .2s;
+}
+#winnerDiv{
+    transition: 3s;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    text-align: center;
+    background-color: rgb(237, 237, 237);
+    width: 50%;
+    height: 300px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgb(198, 197, 197);
+    border-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#winnerInfo{
+    margin-top: 15%;
+    width: 100%;
+    height: 30%;
+    font-size: 45px;
+}
+#counter{
+    font-size: 40px;
+    margin-top: 10px;
+    color: green;
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:1035px) {
+    #startBtn{
+        position: absolute;
+        top:45%;
+        left: 23%;
+        padding: 25px 70px;
+    }
+   #counterBox{
+       width: 100%;
+       height: 150px;
+   }
+   #redCounterBox,#blueCounterBox{
+       width: 50px;
+       height: 50px;
+       border-radius: 8px;
+   }
+    #chanceDiv{
+        font-size: 8px;
+        display: inline-block;
+        margin-right: 10px;
+        margin-top: 15px;
+    }
+
+    #secondsCounterDiv{
+        display: inline-block;
+        margin-left: 30px;
+    }
+    #totalDiv{
+        display: block;
+    }
+    #wrapper{
+        width: 100%;
+        height: 95vh;
+        text-align: center;
+    }
+    #tableWrapper{
+        margin: 0;
+        width: 100%;
+        height: 85%;
+    }
+    
+
+    #resetBtn,#stopBtn,#replayBtn{
+        display: inline-block;
+        padding: 15px 40px;
+        font-size: 12px;
+        margin:  20px  30px 10px 30px ;
+    }
+    #wrapper{
+        height: 550px;
+    }
+    #buttonDiv{
+        margin-top: -5px;
+    }
+    .btn{
+        width: 30px;
+        height: 30px;
+        margin-left: -25px;
+        font-size: 10px;
+    }
+    #winnerDiv{
+        width: 90%;
+        left: 5%;
+    }
+    #winnerDiv h1{
+          font-size: 30px;
+          margin-top: 90px;
+          height: 50px;
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./game.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    
+    <button  id="startBtn">Start</button>
+    <div  id="totalDiv">
+        <div class="hide" id="counterBox">
+            <div id="chanceDiv">
+                <h1 id="head">Your turn</h1>
+                <div id="redCounterBox"></div>
+                <div id="blueCounterBox"></div>
+            </div>
+           <div id="secondsCounterDiv"> seconds left.....
+            <h1 id="counter">10</h1></div>
+        </div>
+        <div class="hide" id="wrapper">
+            <button  id="resetBtn">Reset</button>
+            <button  id="stopBtn">Stop</button>
+            <div id="tableWrapper">
+                <div id="buttonDiv"></div>
+                <div class="tableDiv"><table id="tableDiv"></table></div>
+            </div>
+        </div>
+    </div>
+    <div class="hide" id="winnerDiv">
+        <h1 id="winnerInfo"></h1>
+        <button id="replayBtn">Replay</button>
+    </div>
+    
+</body>
+<script type="module"  src="./game.js"></script>
+</html>
