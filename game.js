@@ -1,4 +1,3 @@
-import Data from "./gameData.js"
 const data = {tableDiv,buttonDiv,startBtn,stopBtn,resetBtn,counterBox,counter,redCounterBox,blueCounterBox,innerDiv ,winnerInfo,replayBtn,wrapper}
 var initailCountdemo = counter.innerHTML
 var initailCount = initailCountdemo
